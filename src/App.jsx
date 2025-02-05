@@ -82,9 +82,11 @@ const App = () => {
 
   return (
     <main>
+      <div className="h-15 flex">
+        <Navbar />
+      </div>
       <div className="pattern" />
       <div className="wrapper">
-        <Navbar />
         <header>
           <img src="./y-tho.png" alt="hero banner" />
           <h1 className="mt-[20px]">
