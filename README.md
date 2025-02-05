@@ -1,12 +1,10 @@
-![SMSP Banner](./public/smsp-banner.png)
-
 # SMSP - Stupid Movies for Stupid People
 
-I was feeling a little rusty on my frontend skills so I built a stupid movie app.
+![SMSP Banner](./public/smsp-banner.png)
 
-It uses The Movie Database API to show trending movies with search.
+I was feeling a little rusty on my frontend skills so I built an app to freshen up. It uses The Movie Database API to show a list of currently trending movies along with some info, plus search.
 
-Custom trending movies algorithm.
+Includes a custom trending movies algorithm that shows the top movies searched for.
 
 ### Built with:
 
