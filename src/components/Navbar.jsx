@@ -1,14 +1,22 @@
+import { useSetAtom } from 'jotai';
+import { uiAtom } from '../state';
 import Overlays from './Overlays';
-import { useState } from 'react';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+  const setUi = useSetAtom(uiAtom);
   return (
     <>
-      <Overlays isOpen={isOpen} />
+      <Overlays />
       <div className="bg-gradient-to-r from-[rgba(88,29,252,0.6)] to-[rgba(79,43,186,0.6)] w-full h-full flex items-center justify-left">
-        <p className="text-white font-bold ml-5" onClick={() => {}}>
+        <p
+          className="text-white font-bold ml-5"
+          onClick={() =>
+            setUi((prev) => ({
+              ...prev,
+              modal: true,
+            }))
+          }
+        >
           SMSP
         </p>
       </div>
